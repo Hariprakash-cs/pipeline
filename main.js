@@ -5,6 +5,6 @@ function getRandomNumber() {
     return randomNumber;
 }
 
-// Call the function and use the result
+// Call the function and use the
 const randomNumber = getRandomNumber();
 console.log('Random Number:', randomNumber);
