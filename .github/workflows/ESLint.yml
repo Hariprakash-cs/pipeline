@@ -21,11 +21,8 @@ jobs:
         with:
           node-version: '18' # Adjust the Node.js version if needed
 
-      - name: Install dependencies
-        run: npm install
-
       - name: Run ESLint
-        run: npx eslint . --format stylish > eslint-report.txt
+        run: npx eslint . --no-eslintrc --env es6 --env node --rule 'semi: ["error", "always"]' > eslint-report.txt
 
       - name: Upload ESLint results
         if: failure()
