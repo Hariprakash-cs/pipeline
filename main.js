@@ -1,4 +1,3 @@
-// Function to generate a random number and log it
 function getRandomNumber() {
     const randomNumber = Math.floor(Math.random() * 100) + 1; // Random number between 1 and 100
     return randomNumber;
