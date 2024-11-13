@@ -25,12 +25,11 @@ jobs:
         run: npm install
 
       - name: Run ESLint
-        run: npx eslint . # Adjust the path or add options if necessary
+        run: npx eslint . --format stylish > eslint-report.txt
 
       - name: Upload ESLint results
         if: failure()
         uses: actions/upload-artifact@v3
         with:
           name: eslint-results
-          path: ./eslint-report.txt
-        run: npx eslint . --format stylish > eslint-report.txt
+          path: eslint-report.txt
