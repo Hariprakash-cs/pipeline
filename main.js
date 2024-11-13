@@ -4,4 +4,4 @@ function getRandomNumber() {
 }
 
 const randomNumber = getRandomNumber();
-console.log('Random Number:', randomNumber);
+console.log('Random Numberss:', randomNumber);
